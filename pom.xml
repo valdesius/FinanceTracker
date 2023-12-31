@@ -72,10 +72,10 @@
 
 
         <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
-<!--        <dependency>-->
-<!--            <groupId>org.liquibase</groupId>-->
-<!--            <artifactId>liquibase-core</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+        </dependency>
 
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

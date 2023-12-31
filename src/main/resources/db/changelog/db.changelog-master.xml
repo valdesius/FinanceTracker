@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <include file="db/changelog/1/0/2023-12-31--0002-account.xml"/>
+    <include file="db/changelog/1/0/2023-12-31--0001-client.xml"/>
+    <include file="db/changelog/1/0/2023-12-31--0003-transaction.xml"/>
+    <include file="db/changelog/1/0/2023-12-31--0004-budget.xml"/>
+    <include file="db/changelog/1/0/2023-12-31--0005-category.xml"/>
+    <include file="db/changelog/1/0/2023-12-31--0006-portfolio.xml"/>
+    <include file="db/changelog/1/0/2023-12-31--0007-asset.xml"/>
+
+    <include file="db/changelog/data/2023-12-31--0002-account-data.xml"/>
+    <include file="db/changelog/data/2023-12-31--0001-client-data.xml"/>
+    <include file="db/changelog/data/2023-12-31--0003-transaction-data.xml"/>
+    <include file="db/changelog/data/2023-12-31--0004-budget-data.xml"/>
+    <include file="db/changelog/data/2023-12-31--0005-category-data.xml"/>
+    <include file="db/changelog/data/2023-12-31--0006-portfolio-data.xml"/>
+    <include file="db/changelog/data/2023-12-31--0007-asset-data.xml"/>
+
+
+</databaseChangeLog>

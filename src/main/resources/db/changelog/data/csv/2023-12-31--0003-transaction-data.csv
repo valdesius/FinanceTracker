@@ -1,0 +1,2 @@
+date;transaction_type;amount;transaction_category;description;bank_account_id
+2023-10-01;BUY;20;test;test;1

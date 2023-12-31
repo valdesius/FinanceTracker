@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+    <changeSet id="2023-12-31--0004-budget" author="valdesius">
+        <preConditions>
+            <not>
+                <tableExists tableName="budget"/>
+            </not>
+        </preConditions>
+
+        <createTable tableName="budget">
+            <column name="id"
+                    type="NUMERIC(19,0)"
+                    autoIncrement="true">
+                <constraints nullable="false"
+                             primaryKey="true"/>
+            </column>
+
+            <column name="name" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="amount" type="NUMERIC(30,0)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="planned_start_and_end_dates" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="category_id" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+
+
+            <column name="client_id"
+                    type="NUMERIC(19,0)">
+                <constraints nullable="false"/>
+            </column>
+            <!--            <constraints nullable="false"-->
+            <!--                         deleteCascade="true"-->
+            <!--                         foreignKeyName="fk_deal_client"-->
+            <!--                         references="client(id)"/>-->
+
+
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
