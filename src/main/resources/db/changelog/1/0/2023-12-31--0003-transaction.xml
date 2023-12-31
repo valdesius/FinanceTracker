@@ -21,7 +21,7 @@
                              primaryKey="true"/>
             </column>
 
-            <column name="date" type="DATE">
+            <column name="transaction_date" type="DATE">
                 <constraints nullable="false"/>
             </column>
 
@@ -41,15 +41,18 @@
                 <constraints nullable="false"/>
             </column>
 
-            <column name="description"
+            <column name="transaction_description"
                     type="VARCHAR(100)">
 
                 <constraints nullable="false"/>
             </column>
 
 
-            <column name="bank_account_id" type="VARCHAR(40)">
-                <constraints nullable="false"/>
+            <column name="account_id" type="NUMERIC(19,0)">
+                <constraints nullable="false"
+                             deleteCascade="true"
+                             foreignKeyName="fk_account_transaction"
+                             references="transaction(id)"/>
             </column>
         </createTable>
     </changeSet>

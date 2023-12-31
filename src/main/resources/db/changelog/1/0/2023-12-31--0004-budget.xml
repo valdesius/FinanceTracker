@@ -33,19 +33,21 @@
                 <constraints nullable="false"/>
             </column>
 
-            <column name="category_id" type="VARCHAR(30)">
-                <constraints nullable="false"/>
+            <column name="category_id" type="NUMERIC(19,0)">
+                <constraints nullable="false"
+                             deleteCascade="true"
+                             foreignKeyName="fk_category_budget"
+                             references="budget(id)"/>
             </column>
 
 
             <column name="client_id"
                     type="NUMERIC(19,0)">
-                <constraints nullable="false"/>
+                <constraints nullable="false"
+                             deleteCascade="true"
+                             foreignKeyName="fk_client_budget"
+                             references="budget(id)"/>
             </column>
-            <!--            <constraints nullable="false"-->
-            <!--                         deleteCascade="true"-->
-            <!--                         foreignKeyName="fk_deal_client"-->
-            <!--                         references="client(id)"/>-->
 
 
 

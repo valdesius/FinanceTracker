@@ -21,7 +21,7 @@
                              primaryKey="true"/>
             </column>
 
-            <column name="type"
+            <column name="account_type"
                     type="VARCHAR(50)">
                 <constraints nullable="false"/>
             </column>

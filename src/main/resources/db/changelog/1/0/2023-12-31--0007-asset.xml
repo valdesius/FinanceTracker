@@ -43,8 +43,11 @@
             </column>
 
 
-            <column name="portfolio_id" type="VARCHAR(40)">
-                <constraints nullable="false"/>
+            <column name="portfolio_id" type="NUMERIC(19,0)">
+                <constraints nullable="false"
+                             deleteCascade="true"
+                             foreignKeyName="fk_portfolio_asset"
+                             references="asset(id)"/>
             </column>
         </createTable>
     </changeSet>

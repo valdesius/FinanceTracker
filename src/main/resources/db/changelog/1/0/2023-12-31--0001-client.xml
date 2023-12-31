@@ -32,7 +32,10 @@
 
             <column name="account_id"
                     type="NUMERIC(19,0)">
-                <constraints nullable="false"/>
+                <constraints nullable="false"
+                             deleteCascade="true"
+                             foreignKeyName="fk_account_client"
+                             references="client(id)"/>
             </column>
         </createTable>
     </changeSet>

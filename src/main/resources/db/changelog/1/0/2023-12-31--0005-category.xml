@@ -23,15 +23,18 @@
 
 
 
-            <column name="name"
+            <column name="category_name"
                     type="VARCHAR(50)">
 
                 <constraints nullable="false"/>
             </column>
 
 
-            <column name="budget_id" type="VARCHAR(40)">
-                <constraints nullable="false"/>
+            <column name="budget_id" type="NUMERIC(19,0)">
+                <constraints nullable="false"
+                             deleteCascade="true"
+                             foreignKeyName="fk_budget_category"
+                             references="category(id)"/>
             </column>
         </createTable>
     </changeSet>

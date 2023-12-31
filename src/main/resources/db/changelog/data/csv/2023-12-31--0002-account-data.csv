@@ -1,2 +1,2 @@
-type;bank_name;balance
+account_type;bank_name;balance
 test;test;30
