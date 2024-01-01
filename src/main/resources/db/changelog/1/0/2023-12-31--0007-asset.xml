@@ -22,13 +22,13 @@
             </column>
 
 
-            <column name="name"
+            <column name="asset_name"
                     type="VARCHAR(50)">
 
                 <constraints nullable="false"/>
             </column>
 
-            <column name="description"
+            <column name="asset_description"
                     type="VARCHAR(50)">
 
                 <constraints nullable="false"/>

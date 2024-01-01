@@ -1,2 +1,2 @@
-name;amount;planned_start_and_end_dates;category_id;client_id
+budget_name;amount;planned_start_and_end_dates;category_id;client_id
 test;23;test;1;1

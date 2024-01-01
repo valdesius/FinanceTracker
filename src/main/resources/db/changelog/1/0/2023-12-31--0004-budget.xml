@@ -21,7 +21,7 @@
                              primaryKey="true"/>
             </column>
 
-            <column name="name" type="VARCHAR(30)">
+            <column name="budget_name" type="VARCHAR(30)">
                 <constraints nullable="false"/>
             </column>
 

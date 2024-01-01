@@ -22,13 +22,13 @@
             </column>
 
 
-            <column name="name"
+            <column name="portfolio_name"
                     type="VARCHAR(50)">
 
                 <constraints nullable="false"/>
             </column>
 
-            <column name="description"
+            <column name="portfolio_description"
                     type="VARCHAR(50)">
 
                 <constraints nullable="false"/>
@@ -36,10 +36,7 @@
 
 
             <column name="client_id" type="NUMERIC(19,0)">
-                <constraints nullable="false"
-                             deleteCascade="true"
-                             foreignKeyName="fk_client_portfolio"
-                             references="portfolio(id)"/>
+                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
