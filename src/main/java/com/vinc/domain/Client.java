@@ -27,5 +27,9 @@ public class Client {
     @OneToMany(mappedBy = "client", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Account> accounts;
 
+    @OneToMany(mappedBy = "client", fetch =  FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Budget> budgets;
+
+
 
 }
